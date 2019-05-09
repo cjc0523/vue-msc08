@@ -9,8 +9,13 @@ import router from './router'
 // 引入mint相关的文件
 import './lib/mui/css/mui.min.css'
 import './lib/mui/css/icons-extra.css'
+// import './lib/mui/css/app.css'
 import './lib/mui/fonts/mui.ttf'
+// import './lib/mui/js/mui.min.js'
 
+import axios from 'axios'
+axios.defaults.baseURL = 'http://www.liulongbin.top:3005'
+Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 // 注册组件
